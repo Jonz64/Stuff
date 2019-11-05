@@ -17,13 +17,13 @@ public class BOT extends ListenerAdapter {
         MessageChannel channel = event.getChannel();
 
         if (content.equals("what is joe")) {
-            channel.sendMessage("joe mama").queue();
+            channel.sendMessage("Joe Mama").queue();
         }
 
         if (content.equals("who is joe")) {
-            channel.sendMessage("joe biden").queue();
+            channel.sendMessage("Joe Biden").queue();
         }
-        if (content.equals("Squeeze")) {
+        if (content.equals("squeeze")) {
             channel.sendMessage("Ian-Kun").queue();
         }
     }

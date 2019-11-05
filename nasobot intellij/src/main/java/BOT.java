@@ -23,6 +23,9 @@ public class BOT extends ListenerAdapter {
         if (content.equals("who is joe")) {
             channel.sendMessage("joe biden").queue();
         }
+        if (content.equals("Squeeze")) {
+            channel.sendMessage("Ian-Kun").queue();
+        }
     }
 }
 

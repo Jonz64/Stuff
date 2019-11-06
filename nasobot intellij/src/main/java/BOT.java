@@ -16,16 +16,33 @@ public class BOT extends ListenerAdapter {
         String content = message.getContentRaw();
         MessageChannel channel = event.getChannel();
 
-        if (content.equals("what is joe")) {
+        if (content.equals("who is joe")) {
             channel.sendMessage("Joe Mama").queue();
         }
-
-        if (content.equals("who is joe")) {
+        if (content.equals("what is joe")) {
             channel.sendMessage("Joe Biden").queue();
         }
         if (content.equals("squeeze")) {
             channel.sendMessage("Ian-Kun").queue();
         }
+        if (content.indexOf(0).equals("n* ttt") && content.length() > 7) {
+            String stuff = content.substring(8);
+            TicTacToe(stuff);
+        }
     }
+
+    public void TicTacToe(MessageReceivedEvent event) {
+        Message message = event.getMessage();
+        String content = message.getContentRaw();
+        MessageChannel channel = event.getChannel();
+
+        if (content.equals("")) {
+            channel.sendMessage("Who are you trying to challenge?");
+        }
+
+
+    }
+
+
 }
 

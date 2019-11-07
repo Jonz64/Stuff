@@ -25,6 +25,9 @@ public class BOT extends ListenerAdapter {
         if (content.equals("squeeze")) {
             channel.sendMessage("Ian-Kun").queue();
         }
+        if (content.equals("my name")) {
+            channel.sendMessage(user.getName()).queue();
+        }
         if (content.indexOf(0).equals("n* ttt") && content.length() > 7) {
             String stuff = content.substring(8);
             TicTacToe(stuff);

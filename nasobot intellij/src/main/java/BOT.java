@@ -13,8 +13,10 @@ public class BOT extends ListenerAdapter {
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
         Message message = event.getMessage();
-        String content = message.getContentRaw();
+        String content = message.getContentRaw().toLowerCase().;
         MessageChannel channel = event.getChannel();
+        User user = event.getAuthor();
+        event.
 
         if (content.equals("who is joe")) {
             channel.sendMessage("Joe Mama").queue();
@@ -23,25 +25,56 @@ public class BOT extends ListenerAdapter {
             channel.sendMessage("Joe Biden").queue();
         }
         if (content.equals("squeeze")) {
-            channel.sendMessage("Ian-Kun").queue();
+            channel.sendMessage("Ian-Kun!!!").queue();
         }
-        if (content.equals("my name")) {
-            channel.sendMessage(user.getName()).queue();
+        if (content.equals("what am i")) {
+            channel.sendMessage("You are " + user.getName() + " aka Big Gey").queue();
         }
-        if (content.indexOf(0).equals("n* ttt") && content.length() > 7) {
-            String stuff = content.substring(8);
-            TicTacToe(stuff);
+
+        if (content.equals("n* help")) {
+            channel.sendMessage("Here are some Not Useless Commands: \nttt: Tic Tac Toe \n ");
+        }
+
+        if (content.indexOf(0).equals("n* ttt ") && content.length() > 6) {
+            String stuff = content.substring(7).trim();
+            TicTacToe(stuff, user);
         }
     }
 
-    public void TicTacToe(MessageReceivedEvent event) {
-        Message message = event.getMessage();
-        String content = message.getContentRaw();
-        MessageChannel channel = event.getChannel();
+    /*public String checkGuild(String name)
+    {
+        ArrayList<String> list =
+        for(int i = 0; i < list.length(); i++)
+            if(list.get(i).equals(name))
+                return list.get(i);
 
-        if (content.equals("")) {
+            return "No";
+    }
+*/
+    public void TicTacToe(String other, String me) {
+        if (other.equals("")) {
             channel.sendMessage("Who are you trying to challenge?");
         }
+
+        else
+            {
+                //String otherName = checkGuild(other);
+            String otherName = "Person";
+            }
+
+        if(otherName.equals("No")){
+            channel.sendMessage("Who the frick is that, dumas?");
+        }
+
+        else
+        {
+            int [][] board = new int[3][3]();
+            channel.sendMessage(me + "(X)'s Turn");
+
+        }
+
+
+
 
 
     }

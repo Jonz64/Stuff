@@ -83,7 +83,7 @@ public class BOT extends ListenerAdapter {
             printOnChannel(MessageReceivedEvent event, (me + "(X)'s Turn"));
 
         }
-        
+    }   
     public void Calculate(String equation){
         int firstNum = Character.getNumericValue(equation.charAt(0));
         int lastNum = Character.getNumericValue(equation.charAt(equation.length() - 1));
@@ -121,7 +121,7 @@ public class BOT extends ListenerAdapter {
 
 
 
-    }
+    
 
 
 }

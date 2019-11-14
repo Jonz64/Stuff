@@ -32,7 +32,7 @@ public class BOT extends ListenerAdapter {
         }
 
         if (content.equals("n* help")) {
-            channel.sendMessage("Here are some Not Useless Commands: \nttt: Tic Tac Toe \n ");
+            channel.sendMessage("Here are some Not Useless Commands: \nttt: Tic Tac Toe \ncalc: +, -, *, /, %, ^ with two numbers\n ");
         }
 
         if (content.contains("n* ttt") && content.length() > 6) {
@@ -85,6 +85,8 @@ public class BOT extends ListenerAdapter {
         }
     }   
     public void Calculate(String equation){
+        if(Character.isDigit(equation.charAt(0)) && Character.isDigit(equation.charAt(equation.length() - 1))){
+            
         int firstNum = Character.getNumericValue(equation.charAt(0));
         int lastNum = Character.getNumericValue(equation.charAt(equation.length() - 1));
         
@@ -93,27 +95,31 @@ public class BOT extends ListenerAdapter {
                 printOnChannel(MessageReceivedEvent event, Integer.toString(firstNum + lastNum));
                 break;
             }
-            if(equation.charAt(i) == '-'){
+            else if(equation.charAt(i) == '-'){
                 printOnChannel(MessageReceivedEvent event, Integer.toString(firstNum - lastNum)); 
                 break;
             }
-            if(equation.charAt(i) == '*'){
+            else if(equation.charAt(i) == '*'){
                 printOnChannel(MessageReceivedEvent event, Integer.toString(firstNum * lastNum));
                 break;
             }
-            if(equation.charAt(i) == '/'){
+            else if(equation.charAt(i) == '/'){
                 printOnChannel(MessageReceivedEvent event, Integer.toString(firstNum / lastNum));
                 break;
             }
-            if(equation.charAt(i) == '%'){
+            else if(equation.charAt(i) == '%'){
                 printOnChannel(MessageReceivedEvent event, Integer.toString(firstNum % lastNum));
                 break;
             }
-            if(equation.charAt(i) == '^'){
+            else if(equation.charAt(i) == '^'){
                 printOnChannel(MessageReceivedEvent event, Integer.toString(firstNum ^ lastNum));
                 break;
             }
         }
+        }
+        
+        else
+            printOnChannel("Type it better, you bot!")
         
     }
 

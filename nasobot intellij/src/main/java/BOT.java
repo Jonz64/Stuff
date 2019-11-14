@@ -35,9 +35,14 @@ public class BOT extends ListenerAdapter {
             channel.sendMessage("Here are some Not Useless Commands: \nttt: Tic Tac Toe \n ");
         }
 
-        if (content.indexOf(0).equals("n* ttt ") && content.length() > 6) {
+        if (content.contains("n* ttt") && content.length() > 6) {
             String stuff = content.substring(7).trim();
             TicTacToe(stuff, user);
+            
+           
+        if (content.contains("n* calc") && content.length() > 7)
+            String stuff = content.substring(8).trim();
+            Calculate(stuff)
         }
     }
 
@@ -72,6 +77,11 @@ public class BOT extends ListenerAdapter {
             channel.sendMessage(me + "(X)'s Turn");
 
         }
+        
+    public void Calculate(String equation){
+        
+            
+    }
 
 
 

@@ -56,31 +56,65 @@ public class BOT extends ListenerAdapter {
             return "No";
     }
 */
+    public void printOnChannel(MessageReceivedEvent event, String stuff){
+        MessageChannel channel = event.getChannel();
+        channel.sendMessage(stuff).queue();
+    }
+    
     public void TicTacToe(String other, String me) {
+        String otherName = ""
         if (other.equals("")) {
-            channel.sendMessage("Who are you trying to challenge?");
+            printOnChannel(MessageReceivedEvent event, "Who are you trying to challenge?");
         }
 
         else
             {
                 //String otherName = checkGuild(other);
-            String otherName = "Person";
+            otherName = "Person";
             }
 
         if(otherName.equals("No")){
-            channel.sendMessage("Who the frick is that, dumas?");
+            printOnChannel(MessageReceivedEvent event, "Who the frick is that, dumas?");
         }
 
         else
         {
             int [][] board = new int[3][3]();
-            channel.sendMessage(me + "(X)'s Turn");
+            printOnChannel(MessageReceivedEvent event, (me + "(X)'s Turn"));
 
         }
         
     public void Calculate(String equation){
+        int firstNum = Character.getNumericValue(equation.charAt(0));
+        int lastNum = Character.getNumericValue(equation.charAt(equation.length() - 1));
         
-            
+        for (int i = 1; i < equation.length()- 1; i++){
+            if(equation.charAt(i) == '+'){
+                printOnChannel(MessageReceivedEvent event, Integer.toString(firstNum + lastNum));
+                break;
+            }
+            if(equation.charAt(i) == '-'){
+                printOnChannel(MessageReceivedEvent event, Integer.toString(firstNum - lastNum)); 
+                break;
+            }
+            if(equation.charAt(i) == '*'){
+                printOnChannel(MessageReceivedEvent event, Integer.toString(firstNum * lastNum));
+                break;
+            }
+            if(equation.charAt(i) == '/'){
+                printOnChannel(MessageReceivedEvent event, Integer.toString(firstNum / lastNum));
+                break;
+            }
+            if(equation.charAt(i) == '%'){
+                printOnChannel(MessageReceivedEvent event, Integer.toString(firstNum % lastNum));
+                break;
+            }
+            if(equation.charAt(i) == '^'){
+                printOnChannel(MessageReceivedEvent event, Integer.toString(firstNum ^ lastNum));
+                break;
+            }
+        }
+        
     }
 
 

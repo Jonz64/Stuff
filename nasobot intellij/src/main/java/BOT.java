@@ -13,10 +13,10 @@ public class BOT extends ListenerAdapter {
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
         Message message = event.getMessage();
-        String content = message.getContentRaw().toLowerCase().;
+        String content = message.getContentRaw().toLowerCase().trim();
         MessageChannel channel = event.getChannel();
         User user = event.getAuthor();
-        event.
+        
 
         if (content.equals("who is joe")) {
             channel.sendMessage("Joe Mama").queue();
@@ -32,7 +32,7 @@ public class BOT extends ListenerAdapter {
         }
 
         if (content.equals("n* help")) {
-            channel.sendMessage("Here are some Not Useless Commands: \nttt: Tic Tac Toe \ncalc: +, -, *, /, %, ^ with two numbers\n ");
+            channel.sendMessage("Here are some Not Useless Commands: \nttt: Tic Tac Toe \ncalc: +, -, *, /, %, ^ with two numbers \nhero: Hero RNG Simulator ").queue();
         }
 
         if (content.contains("n* ttt") && content.length() > 6) {

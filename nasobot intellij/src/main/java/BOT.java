@@ -46,6 +46,9 @@ public class BOT extends ListenerAdapter {
             
         if(content.contains("n* hero"))
             Hero();
+            
+        if(user.getName("Jonz64").equals() && Math.random()*100 == 69)
+            channel.sendMessage("")
         }
     }
 

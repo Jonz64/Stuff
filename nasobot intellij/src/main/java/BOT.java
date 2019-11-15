@@ -119,7 +119,34 @@ public class BOT extends ListenerAdapter {
         }
         
         else
-            printOnChannel("Type it better, you bot!")
+            printOnChannel(MessageReceivedEvent event, "Type it better, you bot!")
+        
+    }
+    
+    public void Hero(){
+        
+        ArrayList<String> spells = new ArrayList<String>(21);
+        
+        spells = ["Oomph", "Psyche Up", "Bounce", "Heal", "Flame Slash", "Kacrackle Slash", "Accelerate", "Sizz", "Sizzle", "Bang", "Kaboom", "Snooze", "Hatchet Man", "Thwack", "Zoom", "Kaclang", "Metal Slash", "Hocus Pocus", "Magic Burst", "Kamikazee", "Whack"];
+        
+        int one = Math.random()*21;
+        int two = Math.random()*21;
+        int three = Math.random()*21;
+        int four = Math.random()*21;
+        
+        while(one == two || two == three || three == four || four == one || one == three || two == four){
+            one = Math.random()*21;
+            two = Math.random()*21;
+            three = Math.random()*21;
+            four = Math.random()*21;
+        }
+        
+        int crit = Math.random()*10;
+        
+        if(crit == 9)
+            printOnChannel(MessageReceivedEvent event, "KKKKRRRRRRAAAAA!!!!!");
+        
+        printOnChannel(MessageReceivedEvent event, spells.get(one) + "\n" + spells.get(two) + "\n" + spells.get(three) + "\n" + spells.get(four));
         
     }
 

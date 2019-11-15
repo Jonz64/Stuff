@@ -42,7 +42,10 @@ public class BOT extends ListenerAdapter {
            
         if (content.contains("n* calc") && content.length() > 7)
             String stuff = content.substring(8).trim();
-            Calculate(stuff)
+            Calculate(stuff);
+            
+        if(content.contains("n* hero"))
+            Hero();
         }
     }
 
@@ -62,7 +65,7 @@ public class BOT extends ListenerAdapter {
     }
     
     public void TicTacToe(String other, String me) {
-        String otherName = ""
+        String otherName = "";
         if (other.equals("")) {
             printOnChannel(MessageReceivedEvent event, "Who are you trying to challenge?");
         }
@@ -112,11 +115,11 @@ public class BOT extends ListenerAdapter {
                 break;
             }
             else if(equation.charAt(i) == '^'){
-                printOnChannel(MessageReceivedEvent event, Integer.toString(firstNum ^ lastNum));
+                printOnChannel(MessageReceivedEvent event, Integer.toString(Math.pow(firstNum, lastNum)));
                 break;
             }
         }
-        }
+    }
         
         else
             printOnChannel(MessageReceivedEvent event, "Type it better, you bot!")

@@ -32,7 +32,7 @@ public class BOT extends ListenerAdapter {
         }
 
         if (content.equals("n* help")) {
-            channel.sendMessage("Here are some Not Useless Commands: \nttt: Tic Tac Toe \ncalc: +, -, *, /, %, ^ with two numbers \nhero: Hero RNG Simulator ").queue();
+            channel.sendMessage("Here are some Not Useless Commands: \nttt: Tic Tac Toe (canceled)\ncalc: +, -, *, /, %, ^ with two numbers \nhero: Hero RNG Simulator ").queue();
         }
 
         if (content.contains("n* ttt") && content.length() > 6) {
@@ -45,7 +45,7 @@ public class BOT extends ListenerAdapter {
             Calculate(stuff);
             
         if(content.contains("n* hero"))
-            Hero();
+            Hero(MessageReceivedEvent event);
             
         if(user.getName("Jonz64").equals() && Math.random()*100 == 69)
             channel.sendMessage("")
@@ -129,11 +129,14 @@ public class BOT extends ListenerAdapter {
         
     }
     
-    public void Hero(){
+    public void Hero(MessageReceivedEvent event){
+        
+        Message message = event.getMessage();
+        String content = message.getContentRaw().toLowerCase().trim();
         
         ArrayList<String> spells = new ArrayList<String>(21);
         
-        spells = ["Oomph", "Psyche Up", "Bounce", "Heal", "Flame Slash", "Kacrackle Slash", "Accelerate", "Sizz", "Sizzle", "Bang", "Kaboom", "Snooze", "Hatchet Man", "Thwack", "Zoom", "Kaclang", "Metal Slash", "Hocus Pocus", "Magic Burst", "Kamikazee", "Whack"];
+        spells = ["Oomph", "Psyche Up", "Bounce", "Heal", "Flame Slash", "Kacrackle Slash", "Accelerate", "Sizz", "Sizzle", "Bang", "Kaboom", "Snooze", "Hatchet Man", "Thwack", "Whack", "Zoom", "Kaclang", "Metal Slash", "Hocus Pocus", "Magic Burst", "Kamikazee"];
         
         int one = Math.random()*21;
         int two = Math.random()*21;
@@ -154,7 +157,129 @@ public class BOT extends ListenerAdapter {
         
         printOnChannel(MessageReceivedEvent event, spells.get(one) + "\n" + spells.get(two) + "\n" + spells.get(three) + "\n" + spells.get(four));
         
+        ArrayList<String> theSpells = new ArrayList<String>(4);
+        theSpells = [spells.get(one), spells.get(two), spells.get(three), spells.get(four)]
+        
+        String theSpell = "";
+            
+        for(int i = 0; i < theSpells.length(); i++)
+        {
+            if(content.contains(theSpells.get(i)))
+                theSpell = theSpells.get(i);
+        }
+        
+        while(True){
+        if(theSpell.equals("Oomph")){
+            printOnChannel(MessageReceivedEvent event, "I are Stronger");
+            break;
+        }
+        
+        else if(theSpell.equals("Psyche Up")){
+            printOnChannel(MessageReceivedEvent event, "HAAAAAAAAAAAAAAAAAAA!!!!!!!!!!!!");
+            break;
+        }
+        
+        else if(theSpell.equals("Bounce")){
+            printOnChannel(MessageReceivedEvent event, "Screw Projectiles");
+            break;
+        }
+        
+        else if(theSpell.equals("Heal")){
+            printOnChannel(MessageReceivedEvent event, "Aaaaaaaaaaaa *nuts*");
+            break;
+        }
+        
+        else if(theSpell.equals("Flame Slash")){
+            printOnChannel(MessageReceivedEvent event, "HOT HOT HOT!!!!!!!");
+            break;
+        }
+        
+        else if(theSpell.equals("Kacrackle Slash")){
+            printOnChannel(MessageReceivedEvent event, ":O");
+            break;
+        }
+        
+        else if(theSpell.equals("Accelerate")){
+            printOnChannel(MessageReceivedEvent event, "GOTTA GO FAAASSSSTTTT!!!!!");
+            break;
+        }
+        
+        else if(theSpell.equals("Sizz")){
+            printOnChannel(MessageReceivedEvent event, "Boom");
+            break;
+        }
+        
+        else if(theSpell.equals("Sizzle")){
+            printOnChannel(MessageReceivedEvent event, "BOOM!");
+            break;
+        }
+        
+        else if(theSpell.equals("Bang")){
+            printOnChannel(MessageReceivedEvent event, "BOOOOOOOOOOOOMMMMMM!!!!!");
+            break;
+        }
+        
+        else if(theSpell.equals("Kaboom")){
+            printOnChannel(MessageReceivedEvent event, "*mushroom cloud*");
+            break;
+        }
+        
+        else if(theSpell.equals("Snooze")){
+            printOnChannel(MessageReceivedEvent event, "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz");
+            break;
+        }
+        
+        else if(theSpell.equals("Hatchet Man")){
+            printOnChannel(MessageReceivedEvent event, "Whoops your shields gone");
+            break;
+        }
+        
+        else if(theSpell.equals("Thwack")){
+            printOnChannel(MessageReceivedEvent event, "Ford Starts to Rage");
+            break;
+        }
+        
+        else if(theSpell.equals("Whack")){
+            printOnChannel(MessageReceivedEvent event, "Ford Also Starts to Rage");
+            break;
+        }
+        
+        else if(theSpell.equals("Zoom")){
+            printOnChannel(MessageReceivedEvent event, "I can FLY!");
+            break;
+        }
+        
+        else if(theSpell.equals("Kaclang")){
+            printOnChannel(MessageReceivedEvent event, "This move sux");
+            break;
+        }
+        
+        else if(theSpell.equals("Metal Slash")){
+            printOnChannel(MessageReceivedEvent event, "This move also sux");
+            break;
+        }
+        
+        else if(theSpell.equals("Hocus Pocus")){
+            printOnChannel(MessageReceivedEvent event, "RNG at it's finest");
+            break;
+        }
+        
+        else if(theSpell.equals("Magic Burst")){
+            printOnChannel(MessageReceivedEvent event, "HYYYYAAAAAA!!!!!!!!!!");
+            break;
+        }
+        
+        else if(theSpell.equals("Kamikazee")){
+            printOnChannel(MessageReceivedEvent event, "BYE BYE!");
+            break;
+        }
+            
+        }
+        
     }
+    
+    
+    
 
 
 

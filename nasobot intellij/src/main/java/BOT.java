@@ -47,8 +47,8 @@ public class BOT extends ListenerAdapter {
         if(content.contains("n* hero"))
             Hero(MessageReceivedEvent event);
             
-        if(user.getName("Jonz64").equals() && Math.random()*100 == 69)
-            channel.sendMessage("")
+        if(user.getName.equals("TheMasterSlayer") && Math.random()*100 == 69)
+            channel.sendMessage("Neko-Senpai: Ian... i love u\nchibi: Ian... i miss u so much... come back to me\nCherry: Ian my love...\nHatsune Miku: Ian... i want to be with u ").queue();
         }
     }
 

@@ -60,19 +60,23 @@ public class compsciNaso extends ListenerAdapter {
             herospells = Hero(event);
 
         }
-
-        if(content.contains("n* roast")  && content.length() > 8){
-
-            Roast(event, content);
-        }
-
-
-
+        
         if(herospells.contains(content)) {
             HeroSpells(event, content);
             herospells.clear();
 
         }
+
+        if(content.contains("n* roast")  && content.length() > 8){
+
+            Roast(event, content);
+        }
+        
+        if(content.contains("n* "))
+
+
+
+        
 
         if ((user.getName().equals("TheMasterSlayer") || user.getName().equals("Ian W.")) && Math.random() * 100 == 69)
             channel.sendMessage("Neko-Senpai: Ian... i love u\nchibi: Ian... i miss u so much... come back to me\nCherry: Ian my love...\nHatsune Miku: Ian... i want to be with u ").queue();
@@ -276,6 +280,7 @@ public class compsciNaso extends ListenerAdapter {
         roasts.add(", your mom");
         roasts.add(" is a Nathan");
         roasts.add(", chibi loves you");
+        /*roasts.add("");
         roasts.add("");
         roasts.add("");
         roasts.add("");
@@ -297,8 +302,7 @@ public class compsciNaso extends ListenerAdapter {
         roasts.add("");
         roasts.add("");
         roasts.add("");
-        roasts.add("");
-
+*/
 
 
         int number = (int)(Math.random()*roasts.size());

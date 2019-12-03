@@ -24,10 +24,12 @@ public class compsciNaso extends ListenerAdapter {
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
         Message message = event.getMessage();
+        
         String content = message.getContentRaw().toLowerCase().trim();
+        
         MessageChannel channel = event.getChannel();
+        
         User user = event.getAuthor();
-
 
 
         if (content.equals("who is joe")) {
@@ -44,7 +46,7 @@ public class compsciNaso extends ListenerAdapter {
         }
 
         if (content.equals("n* help")) {
-            channel.sendMessage("Here are some Not Useless Commands: \nttt: Tic Tac Toe (canceled)\ncalc: +, -, *, /, %, ^ with two numbers \nhero: Hero RNG Simulator ").queue();
+            channel.sendMessage("Simple Text Commands: Who is Joe,  What is Joe, Squeeze, What Am I\nHere are some Not Useless Commands: \nttt: Tic Tac Toe (canceled)\ncalc: +, -, *, /, %, ^ with two numbers \nhero: Hero RNG Simulator\nsmashchar: A characteristic of every Smash character").queue();
         }
 
         if (content.contains("n* ttt") && content.length() > 6) {
@@ -72,7 +74,13 @@ public class compsciNaso extends ListenerAdapter {
             Roast(event, content);
         }
         
-        if(content.contains("n* "))
+        if(content.contains("n* smashcharacter")){
+            SmashChar(event, content);
+        }
+        
+        if(content.contains("n* anime")){
+            Anime(event, content);
+        }
 
 
 
@@ -125,24 +133,30 @@ public class compsciNaso extends ListenerAdapter {
                 if (equation.charAt(i) == '+') {
                     printOnChannel(event, Integer.toString(firstNum + lastNum));
                     break;
-                } else if (equation.charAt(i) == '-') {
+                } 
+                else if (equation.charAt(i) == '-') {
                     printOnChannel(event, Integer.toString(firstNum - lastNum));
                     break;
-                } else if (equation.charAt(i) == '*') {
+                } 
+                else if (equation.charAt(i) == '*') {
                     printOnChannel(event, Integer.toString(firstNum * lastNum));
                     break;
-                } else if (equation.charAt(i) == '/') {
+                } 
+                else if (equation.charAt(i) == '/') {
                     printOnChannel(event, Integer.toString(firstNum / lastNum));
                     break;
-                } else if (equation.charAt(i) == '%') {
+                } 
+                else if (equation.charAt(i) == '%') {
                     printOnChannel(event, Integer.toString(firstNum % lastNum));
                     break;
-                } else if (equation.charAt(i) == '^') {
+                } 
+                else if (equation.charAt(i) == '^') {
                     printOnChannel(event, Integer.toString((int) Math.pow(firstNum, lastNum)));
                     break;
                 }
             }
-        } else
+        } 
+        else
             printOnChannel(event, "Type it better, you bot!");
 
     }
@@ -152,38 +166,65 @@ public class compsciNaso extends ListenerAdapter {
         Message message = event.getMessage();
         String content = message.getContentRaw().toLowerCase().trim();
         ArrayList<String> spells = new ArrayList<String>();
+        
         spells.add("Oomph");
+        
         spells.add("Psyche Up");
+        
         spells.add("Bounce");
+        
         spells.add("Heal");
+        
         spells.add("Flame Slash");
+        
         spells.add("Kacrackle Slash");
+        
         spells.add("Accelerate");
+        
         spells.add("Sizz");
+        
         spells.add("Sizzle");
+        
         spells.add("Bang");
+        
         spells.add("Kaboom");
+        
         spells.add("Snooze");
+        
         spells.add("Hatchet Man");
+        
         spells.add("Thwack");
+        
         spells.add("Whack");
+        
         spells.add("Zoom");
+        
         spells.add("Kaclang");
+        
         spells.add("Metal Slash");
+        
         spells.add("Hocus Pocus");
+        
         spells.add("Magic Burst");
+        
         spells.add("Kamikaze");
 
 
         int one = (int) (Math.random() * 21);
+        
         int two = (int) (Math.random() * 21);
+        
         int three = (int) (Math.random() * 21);
+        
         int four = (int) (Math.random() * 21);
 
         while (one == two || two == three || three == four || four == one || one == three || two == four) {
             one = (int) (Math.random() * 21);
+            
             two = (int) (Math.random() * 21);
+            
             three = (int) (Math.random() * 21);
+            
             four = (int) (Math.random() * 21);
         }
 
@@ -195,12 +236,17 @@ public class compsciNaso extends ListenerAdapter {
         printOnChannel(event, (spells.get(one) + "\n" + spells.get(two) + "\n" + spells.get(three) + "\n" + spells.get(four)));
 
         ArrayList<String> theSpells = new ArrayList<String>();
+        
         theSpells.add(spells.get(one).toLowerCase());
+        
         theSpells.add(spells.get(two).toLowerCase());
+        
         theSpells.add(spells.get(three).toLowerCase());
+        
         theSpells.add(spells.get(four).toLowerCase());
 
         return theSpells;
+        
         }
 
     public void HeroSpells(MessageReceivedEvent event, String theSpell){
@@ -208,64 +254,84 @@ public class compsciNaso extends ListenerAdapter {
                 if (theSpell.equals("oomph")) {
                     printOnChannel(event, "I are Stronger");
 
-                } else if (theSpell.equals("psyche up")) {
+                } 
+                else if (theSpell.equals("psyche up")) {
                     printOnChannel(event, "HAAAAAAAAAAAAAAAAAAA!!!!!!!!!!!!");
 
-                } else if (theSpell.equals("bounce")) {
+                } 
+                else if (theSpell.equals("bounce")) {
                     printOnChannel(event, "Screw Projectiles");
 
-                } else if (theSpell.equals("heal")) {
+                } 
+                else if (theSpell.equals("heal")) {
                     printOnChannel(event, "Aaaaaaaaaaaa *nuts*");
 
-                } else if (theSpell.equals("flame slash")) {
+                } 
+                else if (theSpell.equals("flame slash")) {
                     printOnChannel(event, "HOT HOT HOT!!!!!!!");
 
-                } else if (theSpell.equals("kacrackle slash")) {
+                } 
+                else if (theSpell.equals("kacrackle slash")) {
                     printOnChannel(event, ":O");
 
-                } else if (theSpell.equals("accelerate")) {
+                } 
+                else if (theSpell.equals("accelerate")) {
                     printOnChannel(event, "GOTTA GO FAAASSSSTTTT!!!!!");
 
-                } else if (theSpell.equals("sizz")) {
+                } 
+                else if (theSpell.equals("sizz")) {
                     printOnChannel(event, "Boom");
 
-                } else if (theSpell.equals("sizzle")) {
+                } 
+                else if (theSpell.equals("sizzle")) {
                     printOnChannel(event, "BOOM!");
 
-                } else if (theSpell.equals("bang")) {
+                } 
+                else if (theSpell.equals("bang")) {
                     printOnChannel(event, "BOOOOOOOOOOOOMMMMMM!!!!!");
 
-                } else if (theSpell.equals("kaboom")) {
+                } 
+                else if (theSpell.equals("kaboom")) {
                     printOnChannel(event, "*mushroom cloud*");
 
-                } else if (theSpell.equals("snooze")) {
+                } 
+                else if (theSpell.equals("snooze")) {
                     printOnChannel(event, "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz");
 
-                } else if (theSpell.equals("hatchet man")) {
+                } 
+                else if (theSpell.equals("hatchet man")) {
                     printOnChannel(event, "Whoops your shields gone");
 
-                } else if (theSpell.equals("thwack")) {
+                } 
+                else if (theSpell.equals("thwack")) {
                     printOnChannel(event, "Ford Starts to Rage");
 
-                } else if (theSpell.equals("whack")) {
+                } 
+                else if (theSpell.equals("whack")) {
                     printOnChannel(event, "Ford Also Starts to Rage");
 
-                } else if (theSpell.equals("zoom")) {
+                } 
+                else if (theSpell.equals("zoom")) {
                     printOnChannel(event, "I can FLY!");
 
-                } else if (theSpell.equals("kaclang")) {
+                } 
+                else if (theSpell.equals("kaclang")) {
                     printOnChannel(event, "This move sux");
 
-                } else if (theSpell.equals("metal slash")) {
+                } 
+                else if (theSpell.equals("metal slash")) {
                     printOnChannel(event, "This move also sux");
 
-                } else if (theSpell.equals("hocus pocus")) {
+                } 
+                else if (theSpell.equals("hocus pocus")) {
                     printOnChannel(event, "RNG at it's finest");
 
-                } else if (theSpell.equals("magic burst")) {
+                } 
+                else if (theSpell.equals("magic burst")) {
                     printOnChannel(event, "HYYYYAAAAAA!!!!!!!!!!");
 
-                } else if (theSpell.equals("kamikazee")) {
+                } 
+                else if (theSpell.equals("kamikazee")) {
                     printOnChannel(event, "BYE BYE!");
 
 
@@ -276,10 +342,15 @@ public class compsciNaso extends ListenerAdapter {
         ArrayList<String> roasts = new ArrayList<String>();
 
         roasts.add(" is triple gay");
+        
         roasts.add(", eat shit and die");
+        
         roasts.add(", your mom");
+        
         roasts.add(" is a Nathan");
+        
         roasts.add(", chibi loves you");
+        
         /*roasts.add("");
         roasts.add("");
         roasts.add("");
@@ -306,6 +377,7 @@ public class compsciNaso extends ListenerAdapter {
 
 
         int number = (int)(Math.random()*roasts.size());
+        
         String roast = roasts.get(number);
 
         String total = person + roast;
@@ -315,16 +387,13 @@ public class compsciNaso extends ListenerAdapter {
 
 
     }
+    
+    public void SmashChar(MessageReceivedEvent event, String character){
+        
+    }
+    
+    public void Anime (MessageReceivedEvent event, String )
 
 
 
 }
-
-
-
-
-
-
-
-
-

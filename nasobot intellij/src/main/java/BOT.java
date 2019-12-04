@@ -30,99 +30,80 @@ public class compsciNaso extends ListenerAdapter {
         MessageChannel channel = event.getChannel();
         
         User user = event.getAuthor();
+        
+        
 
 
-        if (content.equals("who is joe")) {
+        if (content.equals("who is joe")) 
+        {
             channel.sendMessage("Joe Mama").queue();
         }
-        if (content.equals("what is joe")) {
+        
+        if (content.equals("what is joe")) 
+        {
             channel.sendMessage("Joe Biden").queue();
         }
-        if (content.equals("squeeze")) {
+        
+        if (content.equals("squeeze")) 
+        {
             channel.sendMessage("Ian-Kun!!!").queue();
         }
-        if (content.equals("what am i")) {
+        
+        if (content.equals("what am i")) 
+        {
             channel.sendMessage("You are " + user.getName() + " aka Big Gey").queue();
         }
 
-        if (content.equals("n* help")) {
-            channel.sendMessage("Simple Text Commands: Who is Joe,  What is Joe, Squeeze, What Am I\nHere are some Not Useless Commands: \nttt: Tic Tac Toe (canceled)\ncalc: +, -, *, /, %, ^ with two numbers \nhero: Hero RNG Simulator\nsmashchar: A characteristic of every Smash character").queue();
+        if (content.equals("n* help")) 
+        {
+            channel.sendMessage("Here are some Not Useless Commands:\nSimple Text Commands: Who is Joe,  What is Joe, Squeeze, What Am I \ncalc: +, -, *, /, %, ^ with two numbers \nhero: Hero RNG Simulator\nsmashchar: A characteristic of every Smash character\nuno: The Uno Argument").queue();
         }
 
-        if (content.contains("n* ttt") && content.length() > 6) {
-            String stuff = content.substring(7).trim();
-            //TicTacToe(stuff, user.getName(), event);
-        }
-
-        if (content.contains("n* calc") && content.length() > 7) {
+        if (content.contains("n* calc") && content.length() > 7) 
+        {
             String stuff = content.substring(8).trim();
             Calculate(stuff, event);
         }
-        if (content.contains("n* hero")) {
+        if (content.contains("n* hero")) 
+        {
             herospells = Hero(event);
-
         }
         
-        if(herospells.contains(content)) {
+        if(herospells.contains(content)) 
+        {
             HeroSpells(event, content);
             herospells.clear();
-
         }
 
-        if(content.contains("n* roast")  && content.length() > 8){
-
+        if(content.contains("n* roast")  && content.length() > 8)
+        {
             Roast(event, content);
         }
         
-        if(content.contains("n* smashcharacter")){
+        if(content.contains("n* smashcharacter"))
+        {
             SmashChar(event, content);
         }
         
-        if(content.contains("n* anime")){
-            Anime(event, content);
+        if(content.contains("n* uno"))
+        {
+            Uno(event);
         }
 
-
-
-        
-
         if ((user.getName().equals("TheMasterSlayer") || user.getName().equals("Ian W.")) && Math.random() * 100 == 69)
+        {
             channel.sendMessage("Neko-Senpai: Ian... i love u\nchibi: Ian... i miss u so much... come back to me\nCherry: Ian my love...\nHatsune Miku: Ian... i want to be with u ").queue();
+        }
+        
     }
 
-    /*public String checkGuild(String name)
-       {
-           ArrayList<String> list =
-           for(int i = 0; i < list.length(); i++)
-               if(list.get(i).equals(name))
-                   return list.get(i);
-               return "No";
-       }
-   */
+   
     public void printOnChannel(MessageReceivedEvent event, String stuff) {
         MessageChannel channel = event.getChannel();
         channel.sendMessage(stuff).queue();
     }
 
-   /* public void TicTacToe(String other, String me, MessageReceivedEvent event) {
-        String otherName = "";
-
-        if (other.equals("")) {
-            printOnChannel(event, "Who are you trying to challenge?");
-        } else {
-            //String otherName = checkGuild(other);
-            otherName = "Person";
-        }
-
-        if (otherName.equals("No")) {
-            printOnChannel(event, "Who the frick is that, dumas?");
-        } else {
-            //int[][] board = new int[3][3] ();
-            printOnChannel(event, (me + "(X)'s Turn"));
-
-        }
-    }
-*/
+   
     public void Calculate(String equation, MessageReceivedEvent event) {
         if (Character.isDigit(equation.charAt(0)) && Character.isDigit(equation.charAt(equation.length() - 1))) {
 
@@ -392,7 +373,40 @@ public class compsciNaso extends ListenerAdapter {
         
     }
     
-    public void Anime (MessageReceivedEvent event, String )
+    public void Uno (MessageReceivedEvent event)
+    {
+        
+        printOnChannel(event, "Do you guys want to play Uno real quick and i can record it and make that my upload tonight?");
+        
+        printOnChannel(event, "I don't have Uno, so go fuck off.");
+        
+        printOnChannel(event, "Everyone has Uno dipshit it came free with your fucking xbox!");
+        
+        printOnChannel(event, "I didn't get it I have oldest xbox know to man.");
+        
+        printOnChannel(event, "No you don't, I bought mine on day one you fucking tard!");
+        
+        printOnChannel(event, "Well mine didn't have i-");
+        
+        printOnChannel(event, "YOU HAVE UNO YOU FUCKING DICK!");
+        
+        printOnChannel(event, "I DON'T HAVE IT YOU FUCKI-");
+        
+        printOnChannel(event, "YOOOOOOOOUUUUUUUUUU HAAAAAAAAAAAAVE UNOOOOOOOOOOOOOO!!!!!!!!!!");
+        
+        printOnChannel(event, "I DON'T HAVE FUCKING UNO MOTHER FUCKER!");
+        
+        printOnChannel(event, "GO INTO THE ARCADE AND YOU'LL BE ABLE TO DOWNLOAD IT FOR FREE YOU DUMB MOTHER FUCKER! (I DON'T HAVE TWO, I DON'T HAVE THREE, I DON'T HAVE FUCKING FOUR)IT'S A FUCKING CARD GAME, THEY DON'T EVEN CHARGE PEOPLE FOR IT! (I DON'T HAVE 6, 8, 9, 10! OR 11!)");
+        
+        printOnChannel(event, "YOU DON'T KNOW A GOD DAMN THINGS IT'S FUCKING UNO! IT'S FREE!");
+        
+        printOnChannel(event, "I DON'T HAVE UNO!");
+        
+        printOnChannel(event, "IT'S FREE AND IT'S FUN!");
+        
+        printOnChannel(event, "Is this going on Youtube?");
+        
+    }
 
 
 

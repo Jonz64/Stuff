@@ -369,7 +369,7 @@ public class compsciNaso extends ListenerAdapter {
                     printOnChannel(event, "HYYYYAAAAAA!!!!!!!!!!");
 
                 } 
-                else if (theSpell.equals("kamikazee")) {
+                else if (theSpell.equals("kamikaze")) {
                     emb.setImage("https://pm1.narvii.com/7283/200fe9a3ab4c1120935daa46e1dbc13f3fb4d369r1-1280-720v2_hq.jpg");
                     printImageOnChannel(event, emb);
                     printOnChannel(event, "BYE BYE!");

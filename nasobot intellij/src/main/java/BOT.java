@@ -153,7 +153,15 @@ public class compsciNaso extends ListenerAdapter {
     public ArrayList<String> Hero(MessageReceivedEvent event) {
 
         Message message = event.getMessage();
+        
         String content = message.getContentRaw().toLowerCase().trim();
+        
+        EmbedBuilder emb = new EmbedBuilder();
+        
+        emb.setImage("https://www.google.com/imgres?imgurl=https%3A%2F%2Ffsmedia.imgix.net%2F7d%2Fa3%2Fce%2Fd1%2F00af%2F4a46%2Fb112%2F2b05a0147819%2Fscreen-shot-2019-06-11-at-10737-pmpng.png%3Frect%3D40%252C0%252C1359%252C680%26auto%3Dformat%252Ccompress%26dpr%3D2%26w%3D650&imgrefurl=https%3A%2F%2Fwww.inverse.com%2Farticle%2F56640-dragon-quest-super-smash-bros-ultimate-dlc-release-date-who-is-erdrick-the-hero-explained&docid=9hmrNus2Ctu9wM&tbnid=7wUu4vXgQjp3PM%3A&vet=10ahUKEwiviYLD96HmAhUELK0KHfqaBB8QMwhEKAAwAA..i&w=1300&h=650&safe=strict&client=safari&bih=689&biw=1371&q=hero%20smash%20erdrick&ved=0ahUKEwiviYLD96HmAhUELK0KHfqaBB8QMwhEKAAwAA&iact=mrc&uact=8");
+        
+        printImageOnChannel(event, emb);
+        
         ArrayList<String> spells = new ArrayList<String>();
         
         spells.add("Oomph");
@@ -417,7 +425,6 @@ public class compsciNaso extends ListenerAdapter {
         printOnChannel(event, total);
 
 
-
     }
     
     public void SmashChar(MessageReceivedEvent event, String character){
@@ -453,7 +460,7 @@ public class compsciNaso extends ListenerAdapter {
         
         printOnChannel(event, "I DON'T HAVE UNO!");
         
-        printOnChannel(event, "IT'S FREE AND IT'S FUN!");
+        printOnChannel(event, "IT'S FREEEEE AND IT'S FUUUUUUN!");
         
         printOnChannel(event, "Is this going on Youtube?");
         

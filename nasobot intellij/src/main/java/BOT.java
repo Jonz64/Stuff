@@ -391,28 +391,73 @@ public class compsciNaso extends ListenerAdapter {
         
         roasts.add(", chibi loves you");
         
-        /*roasts.add("");
-        roasts.add("");
-        roasts.add("");
-        roasts.add("");
-        roasts.add("");
-        roasts.add("");
-        roasts.add("");
-        roasts.add("");
-        roasts.add("");
-        roasts.add("");
-        roasts.add("");
-        roasts.add("");
-        roasts.add("");
-        roasts.add("");
-        roasts.add("");
-        roasts.add("");
-        roasts.add("");
-        roasts.add("");
-        roasts.add("");
-        roasts.add("");
-        roasts.add("");
-        roasts.add("");
+        roasts.add(" has micro pp");
+        
+        roasts.add(" got 53 on LEQ");
+        
+        roasts.add(" had 78 in ALG II");
+        
+        roasts.add(" has micro pp");
+        
+        roasts.add(" was dumped by chibi");
+        
+        roasts.add(" had his search history checked");
+        
+        roasts.add(" is a boomer");
+        
+        roasts.add(" is a degenerate");
+        
+        roasts.add(" uses the neko command everyday");
+        
+        roasts.add(" lost to mohammed");
+        
+        roasts.add(" is babyraging");
+        
+        roasts.add(" got grabbed at zero");
+        
+        roasts.add(" was blown up by green team");
+        
+        roasts.add(" is toxic");
+        
+        roasts.add(" makes me lose braincells");
+        
+        roasts.add(" is bad at life");
+        
+        roasts.add(" has bald forehead");
+        
+        roasts.add(" has bad grades");
+        
+        roasts.add(" dated ian");
+        
+        roasts.add(" ");
+        
+        roasts.add(" ");
+        
+        roasts.add(" ");
+        
+        roasts.add(" ");
+        
+        roasts.add(" ");
+        
+        roasts.add(" ");
+        
+        roasts.add(" ");
+        
+        roasts.add(" ");
+        
+        roasts.add(" ");
+        
+        roasts.add(" ");
+        
+        roasts.add(" ");
+        
+        roasts.add(" ");
+        
+        roasts.add(" ");
+        
+        roasts.add(" ");
+        
+        roasts.add(" ");
 */
 
 

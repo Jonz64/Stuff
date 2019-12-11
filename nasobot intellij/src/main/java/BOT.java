@@ -473,7 +473,7 @@ public class compsciNaso extends ListenerAdapter {
 
     }
     
-    public void SmashChar(MessageReceivedEvent event, String character){
+    public void SmashChar(MessageReceivedEvent event, String content){
         
     }
     
@@ -484,9 +484,9 @@ public class compsciNaso extends ListenerAdapter {
         
         printOnChannel(event, "I don't have Uno, so go fuck off.");
         
-        printOnChannel(event, "Everyone has Uno dipshit it came free with your fucking xbox!");
+        printOnChannel(event, "Everyone has Uno dipshit it came free with your fucking XBOX!");
         
-        printOnChannel(event, "I didn't get it I have oldest xbox know to man.");
+        printOnChannel(event, "I didn't get it I have oldest XBOX known to man.");
         
         printOnChannel(event, "No you don't, I bought mine on day one you fucking tard!");
         
@@ -498,7 +498,7 @@ public class compsciNaso extends ListenerAdapter {
         
         printOnChannel(event, "YOOOOOOOOUUUUUUUUUU HAAAAAAAAAAAAVE UNOOOOOOOOOOOOOO!!!!!!!!!!");
         
-        printOnChannel(event, "I DON'T HAVE FUCKING UNO MOTHER FUCKER!");
+        printOnChannel(event, "I DON'T FUCKING HAVE UNO MOTHER FUCKER!");
         
         printOnChannel(event, "GO INTO THE ARCADE AND YOU'LL BE ABLE TO DOWNLOAD IT FOR FREE YOU DUMB MOTHER FUCKER! (I DON'T HAVE TWO, I DON'T HAVE THREE, I DON'T HAVE FUCKING FOUR)IT'S A FUCKING CARD GAME, THEY DON'T EVEN CHARGE PEOPLE FOR IT! (I DON'T HAVE 6, 8, 9, 10! OR 11!)");
         

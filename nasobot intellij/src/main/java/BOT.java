@@ -59,7 +59,7 @@ public class compsciNaso extends ListenerAdapter {
 
         if (content.equals("n* help")) 
         {
-            channel.sendMessage("Here are some Not Useless Commands:\nSimple Text Commands: Who is Joe,  What is Joe, Squeeze, What Am I \ncalc: +, -, *, /, %, ^ with two numbers \nhero: Hero RNG Simulator\nsmashchar: A characteristic of every Smash character\nuno: The Uno Argument").queue();
+            channel.sendMessage("Here are some Not Useless Commands:\nSimple Text Commands: Who is Joe,  What is Joe, Squeeze, What Am I \ncalc: +, -, *, /, %, ^ with two numbers \nhero: Hero RNG Simulator\nsmashchar: A characteristic of every Smash character\nuno: The Uno Argument\nroast: Destroy someone with a random roast").queue();
         }
 
         if (content.contains("n* calc") && content.length() > 7) 
@@ -80,12 +80,14 @@ public class compsciNaso extends ListenerAdapter {
 
         if(content.contains("n* roast")  && content.length() > 8)
         {
-            Roast(event, content);
+            String roast = content.substring(8).trim();
+            Roast(event, roast);
         }
         
-        if(content.contains("n* smashcharacter"))
+        if(content.contains("n* smashchar") && content.length() > 12)
         {
-            SmashChar(event, content);
+            String character = content.substring(12).trim();
+            SmashChar(event, character);
         }
         
         if(content.contains("n* uno"))

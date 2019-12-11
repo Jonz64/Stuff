@@ -379,8 +379,10 @@ public class compsciNaso extends ListenerAdapter {
     }
 
     public void Roast(MessageReceivedEvent event, String person){
+        
         ArrayList<String> roasts = new ArrayList<String>();
 
+        
         roasts.add(" is triple gay");
         
         roasts.add(", eat shit and die");
@@ -429,36 +431,36 @@ public class compsciNaso extends ListenerAdapter {
         
         roasts.add(" dated ian");
         
-        roasts.add(" ");
+        roasts.add(" de ji ji hen xiao");
         
-        roasts.add(" ");
+        roasts.add(" has contracted gay");
         
-        roasts.add(" ");
+        roasts.add(" needs to commit sudoku");
         
-        roasts.add(" ");
+        roasts.add(" likes cantalopes");
         
-        roasts.add(" ");
+        roasts.add(" plays puff");
         
-        roasts.add(" ");
+        roasts.add(" got a worse essay grade than Sean");
         
-        roasts.add(" ");
+        roasts.add(" thinks Sm4sh is a fun game");
         
-        roasts.add(" ");
+        roasts.add(" has whit stuf com aut pinis");
         
-        roasts.add(" ");
+        roasts.add(" has worse grades than Lawrence");
         
-        roasts.add(" ");
+        roasts.add(", no u");
         
-        roasts.add(" ");
+        roasts.add(" is a normie girl");
         
-        roasts.add(" ");
+        roasts.add(" wears a cum-crusted hoodie and shit-stained shorts");
         
-        roasts.add(" ");
+        roasts.add(", ni mei you peng you");
         
-        roasts.add(" ");
+        roasts.add(" plays Online Smash");
         
-        roasts.add(" ");
-*/
+        roasts.add(" succs");
+
 
 
         int number = (int)(Math.random()*roasts.size());
@@ -468,7 +470,6 @@ public class compsciNaso extends ListenerAdapter {
         String total = person + roast;
 
         printOnChannel(event, total);
-
 
     }
     

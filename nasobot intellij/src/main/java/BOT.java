@@ -116,9 +116,11 @@ public class compsciNaso extends ListenerAdapter {
    
     public void Calculate(String equation, MessageReceivedEvent event) {
         if (Character.isDigit(equation.charAt(0)) && Character.isDigit(equation.charAt(equation.length() - 1))) {
+            
+            
 
-            int firstNum = Character.getNumericValue(equation.charAt(0));
-            int lastNum = Character.getNumericValue(equation.charAt(equation.length() - 1));
+            int firstNum = Integer.parseInt(equation.substring(0, operator).trim());
+            int lastNum = Integer.parseInt(equation.substring(operator + 1).trim());
 
             for (int i = 1; i < equation.length() - 1; i++) {
                 if (equation.charAt(i) == '+') {

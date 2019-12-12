@@ -476,7 +476,401 @@ public class compsciNaso extends ListenerAdapter {
     }
     
     public void SmashChar(MessageReceivedEvent event, String content){
+        if (content.equals("mario")) {
+            channel.sendMessage("FORWARD AERIAL").queue();
+
+        }
+
+        if (content.equals("dk")) {
+            channel.sendMessage("*mashes controller*").queue();
+
+        }
+
+        if (content.equals("link")) {
+            channel.sendMessage("*z drop*").queue();
+
+        }
+
+        if (content.equals("samus")) {
+            channel.sendMessage("campy motherf-").queue();
+
+        }
+
+        if (content.equals("dark samus")) {
+            channel.sendMessage("samus but edgy").queue();
+
+        }
+
+        if (content.equals("yoshi")) {
+            channel.sendMessage("*uninstalls smash ultimate*").queue();
+
+        }
+
+        if (content.equals("kirby")) {
+            channel.sendMessage("sad fortman").queue();
+
+        }
+
+        if (content.equals("fox")) {
+            channel.sendMessage("*hides in shield*").queue();
+
+        }
+
+        if (content.equals("pikachu")) {
+            channel.sendMessage("f***ing rat").queue();
+
+        }
+
+        if (content.equals("luigi")) {
+            channel.sendMessage("degenrate grappler").queue();
+
+        }
+
+        if (content.equals("ness")) {
+            channel.sendMessage("YOU CAN'T ESCAPE THAT SHIT").queue();
+
+        }
+
+        if (content.equals("falcon")) {
+            channel.sendMessage("best dash in the game").queue();
+
+        }
+
+        if (content.equals("jigglypuff")) {
+            channel.sendMessage("nathan").queue();
+
+        }
+
+        if (content.equals("peach")) {
+            channel.sendMessage("down tilt to imagination").queue();
+
+        }
+
+        if (content.equals("daisy")) {
+            channel.sendMessage("the disapointment").queue();
+
+        }
+
+        if (content.equals("bowser")) {
+            channel.sendMessage("command grab").queue();
+
+        }
+
+        if (content.equals("ice climbers")) {
+            channel.sendMessage("side b").queue();
+
+        }
+
+        if (content.equals("sheik")) {
+            channel.sendMessage("depression").queue();
+
+        }
+
+        if (content.equals("zelda")) {
+            channel.sendMessage("wifi cancer").queue();
+
+        }
+
+        if (content.equals("doc")) {
+            channel.sendMessage("ganon mario").queue();
+
+        }
+
+        if (content.equals("pichu")) {
+            channel.sendMessage("little s***").queue();
+
+        }
+
+        if (content.equals("falco")) {
+            channel.sendMessage("up tilt the chracter").queue();
+
+        }
+
+        if (content.equals("marth")) {
+            channel.sendMessage("micro tip").queue();
+
+        }
+
+        if (content.equals("lucina")) {
+            channel.sendMessage("flat").queue();
+
+        }
+
+        if (content.equals("young link")) {
+            channel.sendMessage("even spamier link").queue();
+
+        }
+
+        if (content.equals("ganon")) {
+            channel.sendMessage("doriyah!").queue();
+
+        }
+
+        if (content.equals("mewtwo")) {
+            channel.sendMessage("tail...").queue();
+
+        }
+
+        if (content.equals("roy")) {
+            channel.sendMessage("star ko").queue();
+
+        }
+
+        if (content.equals("chrom")) {
+            channel.sendMessage("I'll end you!").queue();
+
+        }
+
+        if (content.equals("game and watch") || content.equals("game & watch")) {
+            channel.sendMessage("Up B oos the chracter").queue();
+
+        }
+
+        if (content.equals("meta knight")) {
+            channel.sendMessage("Dash attack the character").queue();
+
+        }
+
+        if (content.equals("pit")) {
+            channel.sendMessage("This charcater's in smash?").queue();
+    
+        }
+
+        if (content.equals("dark pit")) {
+            channel.sendMessage("MICRO SHOT").queue();
+
+        }
+
+        if (content.equals("zss")) {
+            channel.sendMessage("You thought you were in advantage?").queue();
+
+        }
+
+        if (content.equals("wario")) {
+            channel.sendMessage("Uh oh... Stinky").queue();
+
+        }
+
+        if (content.equals("snake")) {
+            channel.sendMessage("B").queue();
+
+        }
+
+        if (content.equals("pt") || content.equals("pokemon trainer")) {
+            channel.sendMessage("down aerial").queue();
+
+        }
+
+        if (content.equals("ike")) {
+            channel.sendMessage("EEEETHEEEERRRR!!!!!!!!").queue();
+
+        }
+
+        if (content.equals("diddy kong")) {
+            channel.sendMessage("ZERO main!").queue();
+
+        }
+
+        if (content.equals("lucas")) {
+            channel.sendMessage("PPPPPKKKKKKK FFFRRREEEEEEZZEEE!!!!").queue();
+
+        }
+
+        if (content.equals("sonic")) {
+            channel.sendMessage("GOTTA GO FAAAAAAST!!!!").queue();
+
+        }
+
+        if (content.equals("king dedede") || content.equals("ddd")) {
+            channel.sendMessage("Zach x gordo").queue();
+
+        }
+
+        if (content.equals("olimar")) {
+            channel.sendMessage("Up-Smash on shield").queue();
+
+        }
+
+        if (content.equals("lucario")) {
+            channel.sendMessage("MOHAMMAD SPAM!").queue();
+
+        }
+
+        if (content.equals("rob")) {
+            channel.sendMessage("DOWN TILT TILTS!").queue();
+
+        }
+
+        if (content.equals("toon link")) {
+            channel.sendMessage("HYA! HYA!").queue();
+
+        }
+
+        if (content.equals("wolf")) {
+            channel.sendMessage("AWWWOOOOOOOO! rawr...").queue();
+
+        }
+
+        if (content.equals("villager")) {
+            channel.sendMessage("*throws bowling ball offstage*").queue();
+
+        }
+
+        if (content.equals("megaman")) {
+            channel.sendMessage("*blank stare*").queue();
+
+        }
+
+        if (content.equals("wii fit trainer")) {
+            channel.sendMessage("DEEEEEEEEEEP breathing").queue();
+
+        }
+
+        if (content.equals("rosalina")) {
+            channel.sendMessage("ooooooooooo").queue();
+
+        }
+
+        if (content.equals("little mac")) {
+            channel.sendMessage("best aerials").queue();
+
+        }
+
+        if (content.equals("greninja")) {
+            channel.sendMessage("KOU! GA!").queue();
+
+        }
+
+        if (content.equals("palutena")) {
+            channel.sendMessage("nair lady").queue();
+
+        }
+
+        if (content.equals("pac man") || content.equals("pac-man")) {
+            channel.sendMessage(":D").queue();
+
+        }
+
+        if (content.equals("robin")) {
+            channel.sendMessage("crap mage").queue();
+
+        }
+
+        if (content.equals("shulk")) {
+            channel.sendMessage("I'm really feeling it!").queue();
+
+        }
+
+        if (content.equals("bowser jr") || content.equals("bowser jr.")) {
+            channel.sendMessage("i got nothing, sorry...").queue();
+
+        }
+
+        if (content.equals("duck hunt") || content.equals("duck hunt duo")) {
+            channel.sendMessage("can can can").queue();
+
+        }
+
+        if (content.equals("ryu")) {
+            channel.sendMessage("HADOKEN!!!").queue();
+
+        }
+
+        if (content.equals("ken")) {
+            channel.sendMessage("SHORYUKEN!!!").queue();
+
+        }
+
+        if (content.equals("cloud")) {
+            channel.sendMessage("*speaks in anime language*").queue();
+
+        }
+
+        if (content.equals("corrin")) {
+            channel.sendMessage("No personality at all").queue();
         
+        }
+
+        if (content.equals("bayonetta")) {
+            channel.sendMessage("The lady who got nerfed").queue();
+
+        }
+
+        if (content.equals("inkling")) {
+            channel.sendMessage("jab + roller").queue();
+
+        }
+
+        if (content.equals("ridley")) {
+            channel.sendMessage("RRRRAAAAAAAWWWWWWWRRRRRRRR!!!!!").queue();
+
+        }
+
+        if (content.equals("simon")) {
+            channel.sendMessage("PROJECTILE SPAAAAAAAAAAM!!!!!!").queue();
+
+        }
+
+        if (content.equals("richter")) {
+            channel.sendMessage("also PROJECTILE SPAAAAAAAAAAM!!!!!!").queue();
+
+        }
+
+        if (content.equals("king k rool")) {
+            channel.sendMessage("Drew's best character").queue();
+
+        }
+
+        if (content.equals("isabelle")) {
+            channel.sendMessage("PWECIOUS SMILE").queue();
+
+        }
+
+        if (content.equals("incineroar")) {
+            channel.sendMessage("roooooooaaar").queue();
+
+        }
+
+        if (content.equals("piranha plant")) {
+            channel.sendMessage("p-p-p-p-p-ptooie").queue();
+
+        }
+
+        if (content.equals("joker")) {
+            channel.sendMessage("BEST CHARACTER EVER!!!!!").queue();
+
+        }
+
+        if (content.equals("hero")) {
+            channel.sendMessage("Notice: we have banned hero from this command. If you want to see hero, do the hero command.").queue();
+
+        }
+
+        if (content.equals("banjo & kazooie") || content.equals("banjo")) {
+            channel.sendMessage("Wonder Wing!!!!").queue();
+
+        }
+
+        if (content.equals("terry")) {
+            channel.sendMessage("r u ok?????!!!!!").queue();
+
+        }
+
+        if (content.equals("mii sword fighter")) {
+            channel.sendMessage("boring...").queue();
+
+        }
+
+        if (content.equals("mii gunner")) {
+            channel.sendMessage("Actually, it's sans").queue();
+
+        }
+
+        if (content.equals("mii brawler")) {
+            channel.sendMessage("VINCENT IS A GOD!!!!").queue();
+
+        }
+
     }
     
     public void Uno (MessageReceivedEvent event)
